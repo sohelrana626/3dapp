@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile 3D Apps Lab 4 - 2023</title>
+
+    <!-- css linkup start-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/x3dom.css">
+
+    <!-- css linkup end-->
+
+</head>
+<body>
+    <!-- Header start -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+        <div class="container-fluid">
+            <!-- brand code start -->
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <h1>1</h1>
+                    <h1>oca</h1>
+                    <h2>Cola</h2>
+                    <h3>Journey</h3>
+                    <p>Refreshing the world, one story at a time</p>
+                </a>
+              </div>
+            <!-- brand code end -->
+
+            <!-- three line bar code start -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>  
+            <!-- three line bar code end -->
+
+            <!-- Menu button start -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- The Menu links -->
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications" data-content="It's a 3D web application for lab 04 ...">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Drinks
+                    </a>
+                    <!-- Dropdown menu start for Drinks Menu -->
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="coke.html">Coca Cola</a>
+                        <a class="dropdown-item" href="sprite.html">Sprite</a>
+                        <a class="dropdown-item" href="drpepper.html">Dr Pepper</a>
+                        </div>
+                        <!-- Dropdown menu End for Drinks Menu -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+                  </li>
+                </ul>
+            </div>
+            <!-- menu button end -->
+        </div>
+    </nav>
+    <!-- Header End -->
+
+    <!-- Main Content Start -->
+    <div class="container-fluid main_contents">
+
+      <!-- Row to hold two cards to hold 1) the X3D model and 2) the gallery -->
+      <div class="row bgImage"> 
+            <!-- Column to hold the X3D Model -->
+            <div class="col-sm-9 "> 
+                <div class="card text-left">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                          <li class="nav-item">
+                              <a class="nav-link active" href="coke.html">Coke</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="sprite.html">Sprite</a>
+                        </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="drpepper.html">Dr Pepper</a>
+                          </li>
+                        </ul>
+                    </div>       
+                    <!-- Bootstrap card body to hold information about the X3D model-->
+                    <div class="card-body">
+                    
+                        <h4 class="card-title">Coca Cola Bottle X3D Model</h4>
+      
+                        <div class="model3D">
+                            <x3d>
+                                <scene class="bgCoke">
+                                    <inline url="assets/x3d/coke.x3d"> </inline>
+                                </scene>
+                            </x3d>
+                        </div> 
+                        
+                        <p class="card-text">This X3D model of the Coca Cola Bottle has been created in 3ds Max, exported to VRML97 and converted, using the instantreality transcoders, to X3D for display online.</p>
+                        <h5 class="card-subtitle">Camera Views</h5>
+                        <div class="camera-btns">
+                            <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+                            <div class="btn-group ">
+                                <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                                <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                                <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                                <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                                <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                                <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <!-- Column to hold 3D Image gallery --> 
+            <div class="col-sm-3">
+              <div class="card text-left">
+                  <div class="card-header gallery-header">
+                      Gallery
+                  </div>
+                  <div class="card-body">
+                      <h4 class="card-title">3D Image Gallery</h4>
+                      <a href="coke.html">
+                          <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca.jpg" alt="Coca Cola">
+                      </a>
+                      <a href="sprite.html">
+                          <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Coca Cola">
+                      </a>
+                      <a href="drpepper.html">
+                          <img class="card-img-top img-fluid img-thumbnail" src="assets/images/pepper.jpg" alt="Coca Cola">
+                      </a>
+                      <p class="card-text">These 3D images of the Fanta can, Coke bottle and Costs Coffee cup are rendered in 3ds Max 2019 with the Scan Line Renderer</p>
+                  </div>
+              </div>
+            </div>         
+          </div> <!-- End bgImage class -->
+      </div>
+
+      <!-- Row to hold 2 cards to hold the Fanta image thumbnail image and the descriptive text, etc. -->
+      <div class="row">
+        <!-- Fanta thumbnail column -->
+        <div class="col-sm-3">
+            <div class="card">
+                <a href="#"></a>
+                  <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coke.png" alt="Coke">
+                </a>
+            </div>
+        </div> 
+        <!-- Fanta column -->
+          <div class="col-sm-9">
+              <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">Atlanta Beginnings</h4>
+                    <p class="card-text">On May 8, 1886, Dr. John Pemberton sold the first glass of Coca-Cola at Jacobs' Pharmacy in downtown Atlanta. Serving nine drinks per day in its first year, Coca-Cola was new refreshment in its beginning. See the story here of how it all began.
+                      </p> 
+                      <p class="card-text">The product that has given the world its best-known taste was born in Atlanta, Georgia, on May 8, 1886. Dr. John Stith Pemberton, a local pharmacist, produced the syrup for Coca-Cola, and carried a jug of the new product down the street to Jacobs' Pharmacy, where it was sampled, pronounced "excellent" and placed on sale for five cents a glass as a soda fountain drink. Carbonated water was teamed with the new syrup to produce a drink that was at once "Delicious and Refreshing," a theme that continues to echo today wherever Coca-Cola is enjoyed.</p>   
+                    <a href="#" class="btn btn-primary">Find out more ...</a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+    <nav class="navbar navbar-expand-sm footer">
+      <div class="container-fluid">
+        <div class="copyright">
+          <p><span class="align-baseline">&copy Mobile Web 3D Applications Lab 01 - 2023 </span></p>
+        </div>
+        <div class="footerInfo">
+          <ul>
+            <li class="navbar-text">
+              <p>Season - 2023</p>
+            </li>           
+            <li class="navbar-text">
+              <p>Md. Sohel Rana - Student</p>
+            </li>
+            <li class="navbar-text">
+              <p>Department of Digital Computing & Media</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="social">
+          <a href="#"><i class="fab fa-github-square fa-2x fa-pull-right"></i></a>
+          <a href="#"><i class="fab fa-google-plus-square fa-2x fa-pull-right"></i></a>
+          <a href="#"><i class="fab fa-twitter-square fa-2x fa-pull-right"></i></a>
+          <a href="#"><i class="fab fa-facebook-square fa-2x fa-pull-right"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Footer End -->
+    <!-- Contact Dialuge Box Start -->
+    <div class="modal fade" id="contactModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          
+          <!-- Modal Header -->
+          <div class="modal-header">
+              <h4 class="modal-title">3D App Contact Details</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+              <p>Md. Sohel Rana - Student, Email: mr713@sussex.ac.uk. For info about our 3D apps, email me.
+
+
+
+
+              </p>
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+          
+          </div>
+      </div>
+    </div>
+    <!-- Contact Dialuge Box End -->
+    <!-- Java Script Linkup Start -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/x3dom.js"></script>
+    <!-- Java Script Linkup Start -->
+</body>
+</html>

@@ -1,0 +1,958 @@
+/* Font declare start */
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/loki_cola/LOKICOLA.html);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../assets/fonts/Open_Sans/OpenSans-Regular.html);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../assets/fonts/Oswald/static/Oswald-Regular.html);
+}
+/* Font declare start */
+
+/* body start */
+body{
+    background-color: #EEEEEE;
+}
+
+.main_contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'OpenSans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* main background image design start */
+#main_3d_image {
+    background-image: url(../assets/images/cocabg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+/* main background image design end */
+
+/* main text design start */
+#main_text {
+    float: left;
+    margin: 5%;
+    width: 90%;
+    display: block;
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#main_text h2 {
+    color: #222831;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#main_text h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#main_text p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.card-text {
+    font-size: 13px;
+ }
+/* main text design end */
+
+/* logo design start */
+.logo {
+    margin-top: 4px;
+    }
+
+    .logo h1 {
+        font-family: cocaColaFont;
+        font-size: 31px;
+        margin: 0;
+        margin-top: -10px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+        }
+    
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 31px;
+        margin-top: -6px;
+        margin-bottom: -15px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 3px;
+        float: left;
+        }
+        
+    .logo h3 {
+            font-size: 18px;
+            margin-top: 0px;
+            margin-bottom: -5px;
+            padding-top: 0px;
+            padding-left: 0px;
+            float: left;
+            }
+    .logo p {
+        font-size: 7px; /* You may have to tweak this to get a good fit */
+        margin-top: 22px; /* You may have to tweak this to get a good fit */
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 3px;
+        }
+
+    .navbar_coca_cola{
+        background-color: #222831;
+        border-width: 0px;
+        min-height: 75px;
+    }
+
+    .navbar_coca_cola .navbar-brand {
+        color: #EEEEEE;
+    }
+
+    .navbar_coca_cola .navbar-brand:hover {
+        color: #00ADB5;
+    }
+/* logo design end */
+
+/* Dropdown menu design start */
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: #222831;
+    margin-top: 15px; /* Experiment to move the dropdown menu down */
+}
+
+.dropdown-menu .dropdown-item {
+    color: #EEEEEE;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #00ADB5;
+    background-color: #EEEEEE;
+}
+/* dropdown menu design end */
+/* X3d Design start */
+.bgImage {
+    position: relative;
+    z-index: 1;
+    padding: 0px;
+}
+
+.bgImage .bgCoke {
+    position: absolute;
+    z-index: -1;
+    background-image: url(../assets/images/cokacbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+}
+
+.bgImage .bgPepper {
+    position: absolute;
+    z-index: -1;
+    background-image: url(../assets/images/pepperbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+}
+
+.bgImage .bgSprite {
+    position: absolute;
+    z-index: -1;
+    background-image: url(../assets/images/spritebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+}
+
+.bgImage .card {
+    background-color: rgba(231, 187, 187, 0.0);
+}
+
+/* X3d Design End */
+
+/* Navbar menu design start */
+.navbar_coca_cola .navbar-nav > li > a {
+    color: #EEEEEE; 
+}
+
+.navbar_coca_cola .navbar-nav > li > a:hover, 
+    .navbar_coca_cola .navbar-nav > li > a:focus {
+        color: #00ADB5; 
+    }
+
+.navbar_coca_cola .navbar-nav .nav-item {
+    margin-top: 0px;
+}
+
+.navbar_coca_cola .navbar-nav .nav-item > .active, 
+.navbar_coca_cola .navbar-nav > .active > a:hover, 
+.navbar_coca_cola .navbar-nav > .active > a:focus {
+    color:  #222831; /* Font color for active font */
+    background-color: #EEEEEE;
+    border-radius: 10px;
+}
+.navbar_coca_cola .navbar-nav > li > a:hover, 
+.navbar_coca_cola  .navbar-nav > li > a:focus {
+    color: #00ADB5;  
+}
+
+.navbar_coca_cola .navbar-toggler {
+    border-color: #EEEEEE;
+}
+
+.navbar_coca_cola  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 255, 0, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar_coca_cola .navbar-toggler {
+    outline: none !important;
+}
+/* Navbar menu design End */
+
+/* Camera Button Design start */
+.camera-btns {
+border-color: black; 
+border-style: solid;
+border-width: 0px;
+margin-top: 0px;
+padding: 0px;
+}
+
+.camera-btns > p  {
+font-size: 15px;
+color: red;
+padding: 5px 0px;
+font-weight: 900; 
+}
+
+.camera-font {
+font-weight: 400;   
+color: white;
+}
+
+.camera-font:hover {
+font-weight: 700;   
+color: rgb(3, 3, 3);
+}
+
+.btn-responsive {
+padding: 4px 9px;
+font-size: 60%;
+line-height: 1.2;
+white-space: normal !important;
+}
+
+/* Camera Button Design End */
+
+/* GalarY Design Start */
+.gallery-header {
+color: #222831;
+}
+
+.gallery-header:hover {
+color: #00ADB5;
+border: 1px solid transparent;
+}
+
+/* Galary Design End */
+
+/* Model 3D Design Start */
+.model3D  {
+background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
+border-radius: 5px;
+border: 1px solid rgba(0, 0, 0, 1.0);
+padding: 2px;
+height: 200px;
+}
+X3D, x3d {
+background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
+border-radius: 5px;
+border: 1px solid rgba(255, 0, 0, 1.0);
+width: 100%;
+height: 100%
+
+}
+/* Model 3D Design End */
+/* Footer design start */
+.footer {
+    background-color: #222831;
+    min-height: 70px;
+}
+
+.footerInfo {
+    margin-top: 15px;
+}
+
+.footerInfo .navbar-text > p {
+    color: #EEEEEE;
+    margin: 0px;
+    margin-top: 0px;
+    width: 100%;
+    font-size: 12px;
+}
+.footerInfo .navbar-text {
+    display: inline;
+}
+.copyright > p {
+    color: #EEEEEE;
+    margin: 0px;
+    padding-top: 0px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.social {
+    margin: 0px;
+    padding: 0px;
+    width: 30%;   
+}
+
+.social > a {
+    font-size: 8px;  
+}
+
+.social > p {
+    color: rgb(255, 255, 255);
+    font-size: 8px;
+    text-decoration: none;
+}
+
+.fa-twitter-square:before {
+    content: "\f081";
+    color: green;
+    font-size: 1em;
+}
+
+.fa-github-square:before {
+    content: "\f092"; 
+    color: yellow;
+    font-size: 1em;
+}
+
+.fa-google-plus-square:before {
+    content: "\f0d4"; 
+    color: blue;
+    font-size: 1em;
+}
+
+.fa-facebook-square:before {
+    content: "\f082";
+    color: red;
+    font-size: 1em; 
+}
+/* Footer design end */
+/* body end */
+
+/* screen size design start*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    body {
+        background-color: #EEEEEE;
+    }
+    
+    #main_3d_image {
+        height: 288px;
+    }
+
+    #main_text {
+        float: left;
+        margin-top: 7%;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(202, 181, 181);
+    }
+
+    .navbar_coca_cola {
+        min-height: 90px;
+    }
+
+    /* Footer information CSS rules */
+    .footer {
+        background-color: #461959; /* Set navbar footer background color same as header */
+        height: 60px;
+    }
+
+    .footerInfo {
+        margin-top: 10px;
+    }
+    
+    .footerInfo .navbar-text {
+        display: inline;
+    }
+
+    .footerInfo .navbar-text > p {
+        color: #AED8CC;
+        font-size: 10px;
+    }
+
+    /* Copyright CSS rules */
+    .copyright > p {
+        color: #AED8CC;
+        font-size: 12px;
+    }
+
+    /* Social media icons CSS rules*/
+    .social {
+        padding: 5px;
+    }
+
+    .social > a {
+        font-size: 12px;  
+    }
+
+    .social > p {
+        font-size: 12px;
+    }
+
+    /* CSS rules for the social media font awesome iocns */
+    .fa-twitter-square:before {
+        color: rgb(216, 204, 37);
+    }
+
+    .fa-github-square:before {
+        color: rgb(63, 61, 223);
+    }
+
+    .fa-google-plus-square:before {
+        color: rgb(218, 37, 52);
+    }
+
+    .fa-facebook-square:before {
+        color: rgb(38, 161, 55);
+    }
+    .btn-responsive {
+        padding: px 9px;
+        font-size: 90%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+
+    .model3D  {
+        height: 310px;
+    }
+
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+    body {
+        background-color: rgb(218, 216, 148);
+    }
+    
+    #main_3d_image {
+        height: 363px;
+    }
+
+    #fanta_3d_image {
+        height: 363px;
+    }
+
+    #main_text {
+        float: left;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(218, 216, 148);
+    }
+
+    /* ++++++++++++++++++++++++++LOGO+++++++++++++++++++++++*/
+    
+    /* CSS rule to style the mobile logo */
+
+    .logo {
+        margin-top: 3px;
+    }
+
+    .logo h1 {
+        font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propogated */
+        font-size: 41px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 43px;
+        margin-top: 5px;
+        margin-bottom: -15px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 3px;
+        float: left;
+    }
+
+    .logo h3 {
+        font-size: 31px;
+        margin-top: 5px;
+        margin-bottom: 3px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 10px;
+        margin-top: 46px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 8px;
+    }
+
+    .navbar_coca_cola {
+        min-height: 90px;
+    }
+
+    /* Footer information CSS rules */
+    .footer {
+        background-color: #91df8f; /* Set navbar footer background color same as header */
+        height: 70px;
+    }
+
+    .footerInfo {
+        margin-top: 10px;
+    }
+    
+    .footerInfo .navbar-text {
+        display: inline;
+    }
+
+    .footerInfo .navbar-text > p {
+        color: rgb(37, 8, 8);
+        font-size: 12px;
+    }
+
+    /* Copyright CSS rules */
+    .copyright > p {
+        color: rgb(59, 15, 15);
+        font-size: 16px;
+    }
+
+    /* Social media icons CSS rules*/
+    .social {
+        padding: 5px;
+    }
+
+    .social > a {
+        font-size: 14px;  
+    }
+
+    .social > p {
+        font-size: 14px;
+    }
+
+    /* CSS rules for the social media font awesome iocns */
+    .fa-twitter-square:before {
+        color: rgb(37, 144, 216);
+    }
+
+    .fa-github-square:before {
+        color: rgb(13, 51, 5);
+    }
+
+    .fa-google-plus-square:before {
+        color: rgb(247, 232, 23);
+    }
+
+    .fa-facebook-square:before {
+        color: rgb(230, 8, 8);
+    }
+
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 130%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+
+    .model3D  {
+        height: 380px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    body {
+        background-color: rgb(192, 224, 236);
+    }
+    
+    #main_3d_image {
+        height: 450px;
+    }
+
+    #fanta_3d_image {
+        height: 450px;
+    }
+
+    #main_text {
+        float: left;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: rgb(143, 114, 120);
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: rgb(184, 32, 204);
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .card {
+        background-color: rgb(192, 224, 236);
+    }
+
+    /* Footer information CSS rules */
+    .footer {
+        background-color: #8fbfdf; /* Set navbar footer background color same as header */
+    }
+
+    .footerInfo .navbar-text > p {
+        color: rgb(240, 14, 14);
+    }
+
+    /* Copyright CSS rules */
+    .copyright > p {
+        color: rgb(240, 14, 14);
+    }
+
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 150%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+
+    .model3D  {
+        height: 450px;
+    }
+
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    #main_3d_image {
+        height: 550px;
+    }
+
+    .footer {
+        background-color: #222831;
+    }
+
+    body {
+        background-color: #EEEEEE;
+    }
+
+    .card {
+        background-color: #EEEEEE;
+    }
+
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+    body {
+        background-color: #EEEEEE;
+    }
+    
+    #main_3d_image {
+        height: 363px;
+    }
+
+    #main_text {
+        float: left;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(218, 216, 148);
+    }
+
+    /* ++++++++++++++++++++++++++LOGO+++++++++++++++++++++++*/
+    
+    /* CSS rule to style the mobile logo */
+
+    .logo {
+        margin-top: 3px;
+    }
+
+    .logo h1 {
+        font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propogated */
+        font-size: 41px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 43px;
+        margin-top: 5px;
+        margin-bottom: -15px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 3px;
+        float: left;
+    }
+
+    .logo h3 {
+        font-size: 31px;
+        margin-top: 5px;
+        margin-bottom: 3px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 10px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 8px;
+    }
+
+    .navbar_coca_cola {
+        min-height: 90px;
+    }
+
+    /* Footer information CSS rules */
+    .footer {
+        background-color: #222831; /* Set navbar footer background color same as header */
+        height: 70px;
+    }
+
+    .footerInfo {
+        margin-top: 10px;
+    }
+    
+    .footerInfo .navbar-text {
+        display: inline;
+    }
+
+    .footerInfo .navbar-text > p {
+        color: #EEEEEE;
+        font-size: 12px;
+    }
+
+    /* Copyright CSS rules */
+    .copyright > p {
+        color: #EEEEEE;
+        font-size: 16px;
+    }
+
+    /* Social media icons CSS rules*/
+    .social {
+        padding: 5px;
+    }
+
+    .social > a {
+        font-size: 14px;  
+    }
+
+    .social > p {
+        font-size: 14px;
+    }
+
+    /* CSS rules for the social media font awesome iocns */
+    .fa-twitter-square:before {
+        color: rgb(37, 144, 216);
+    }
+
+    .fa-github-square:before {
+        color: rgb(13, 51, 5);
+    }
+
+    .fa-google-plus-square:before {
+        color: rgb(247, 232, 23);
+    }
+
+    .fa-facebook-square:before {
+        color: rgb(230, 8, 8);
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    body {
+        background-color: #EEEEEE;
+    }
+    
+    #main_3d_image {
+        height: 450px;
+    }
+
+    #main_text {
+        float: left;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: rgb(143, 114, 120);
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: rgb(184, 32, 204);
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .card {
+        background-color: rgb(192, 224, 236);
+    }
+
+    /* Footer information CSS rules */
+    .footer {
+        background-color: #222831; /* Set navbar footer background color same as header */
+    }
+
+    .footerInfo .navbar-text > p {
+        color: #EEEEEE;
+    }
+
+    /* Copyright CSS rules */
+    .copyright > p {
+        color: #EEEEEE;
+    }
+
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    #main_3d_image {
+        height: 550px;
+    }
+
+    #fanta_3d_image {
+        height: 550px;
+    }
+
+    .footer {
+        background-color: rgb(159, 182, 120); /* Set navbar footer background color same as header */
+    }
+
+    body {
+        background-color: rgb(228, 240, 208);
+    }
+
+    .card {
+        background-color: rgb(228, 240, 208);
+    }
+
+    .model3D  {
+        height: 550px;
+    }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    #main_3d_image {
+        height: 600px;
+    }
+
+    #main_3d_image {
+        height: 600px;
+    }
+
+    .footer {
+        background-color: rgb(70, 97, 25); /* Set navbar footer background color same as header */
+    }
+
+    body {
+        background-color: rgb(232, 236, 163);
+    }
+
+    .card {
+        background-color: rgb(232, 236, 163);
+    }
+
+ }
+/* Screen size design end */
